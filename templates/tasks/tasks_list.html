@@ -1,0 +1,43 @@
+{% extends 'navbar.html' %}
+
+{% block body %}
+<div>
+  <div class="container-padding">
+      <div class="row">
+        <div class="tab-item-special col-2">
+          <h5><a href="{% url 'task-list' %}" class="lateral-menu"><i class="fa fa-tasks"></i> <b>Tarefas</b></a></h5>
+          <h5><a href="{% url 'note-list' %}" class="lateral-menu"><i class="fa fa-sticky-note-o"></i> Notas</a></h5>
+          <h5><i class="fa fa-calendar-o"></i> Calendário</h5>
+        </div>
+        <div class="tab-item-spec col-10">
+          <h3>Tarefas</h3>
+          {% for task in object_list %}
+            <div class="unit-task">
+              <div class="row">
+                <div class="col-10">
+                  <input type="radio" id="radioButton">
+                  <td>{{ task.description }}</td>
+                  <td>{{ task.start_date }}</td>
+                </div>
+                <div class="col-2 text-right">
+                  <td><i class="fa fa-clock-o labels" aria-hidden="true"></i></td>
+                  <td><a href="{% url 'task-edit' task.id %}" class="lateral-menu"><i class="fa fa-pencil-square-o labels" aria-hidden="true"></i></a></td>
+                  <td><a href="{% url 'task-delete' task.id %}" class="lateral-menu"><i class="fa fa-trash-o labels" aria-hidden="true"></i></a></td>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="row">
+        <div class="tab-item-special col-2"></div>
+        <div class="tab-item icons col-10">
+          <a href="{% url 'task-create' %}"><i class="fa fa-calendar-plus-o fa-1x icons"></i></a>
+          <a href="{% url 'note-create' %}"><i class="fa fa-camera fa-1x icons"></i></a>
+          <i class="fa fa-bell-o fa-1x icons"></i>
+          <i class="fa fa-plus-circle fa-1x icons"></i>
+        </div>
+      </div>
+  </div>
+</div>
+{% endblock %}

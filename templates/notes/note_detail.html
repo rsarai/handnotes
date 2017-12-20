@@ -1,0 +1,15 @@
+{% extends 'navbar.html' %}
+
+{% block body %}
+  <div class="panel-creates-task">
+      <div class="container panel-creates-task-title">
+        <a href="{% url 'note-list' %}" class="lateral-menu"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+
+        <p></br><b>{{ note.title }}</b></p>
+
+        <div>{{ note.description }}</div>
+
+      </div>
+
+  </div>
+{% endblock %}

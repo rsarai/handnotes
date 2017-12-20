@@ -1,0 +1,140 @@
+.btn-green {
+  background-color: #00A19A;
+  border: 1 solid #00A19A
+}
+
+.navbar {
+  background-color: #00A19A;
+
+  .handNotes {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.navbar-time {
+  background-color: #F67F4B;
+
+  .handNotes {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.white {
+  background-color: #fff;
+}
+
+.taskPanel {
+  background-color: #F3F3F3;
+}
+
+.panel {
+  // margin: 3rem 15rem 0rem 15rem;
+}
+
+.icons {
+  text-align: right;
+
+  i {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    color: black;
+  }
+}
+
+.tasks-wrapper {
+  padding: 1rem 3rem 1rem 3rem;
+  background-color: #fff;
+}
+
+.tasks-title {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.container-padding {
+  padding: 0rem 10rem 4rem 10rem;
+}
+
+
+.unit-task {
+  border: 1px solid #EAEAEA;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.tab-item {
+  padding: 0rem 1rem 1rem 1rem;
+  background-color: #fff;
+}
+
+.tab-item-special {
+  padding: 4rem 1rem 1rem 1rem;
+  border-style: solid;
+  border-color: #CCCCCC;
+  border-width: 0px 1px 0px 0px;
+
+  h3 {
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+  }
+}
+
+.tab-item-spec {
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: #fff;
+}
+
+.title{
+  margin-top: 30px;
+}
+
+.labels {
+  padding-right: 0.4rem;
+}
+
+
+.form-date{
+  max-width: 150px;
+}
+
+.background-panel {
+  background-color: #EAEAEA;
+}
+
+.panel-creates-task {
+  background-color: #FFF;
+  margin: 5rem 20rem 5rem 20rem;
+  border-radius: 0.5rem;
+  border: 1px solid #CCCCCC;
+}
+
+.panel-creates-task-title {
+  padding: 1rem 1rem 1rem 1rem;
+
+  .date {
+    display: flex;
+  }
+
+  .unit-task {
+    width: 100%;
+    border: 1px solid #CCCCCC;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+.navbar-link {
+  color: #fff;
+}
+
+.lateral-menu {
+  color: black;
+}

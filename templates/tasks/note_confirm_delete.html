@@ -1,0 +1,15 @@
+{% extends 'navbar.html' %}
+{% load widget_tweaks %}
+
+{% block body %}
+<div class="container title">
+  <form action="" method="post">
+    {% csrf_token %}
+    <div class="margin text-center">
+      <h3>Are you sure you want to delete the "{{ object.title }}" note?</h3>
+      <a href="{% url 'note-list' %}" class="btn btn-primary btn-green" role="button">Return</a>
+      <button type="submit" class="btn btn-primary btn-green">Confirm</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'navbar.html' %}
+{% load widget_tweaks %}
+
+{% block body %}
+  <div class="panel-creates-task">
+    <form class="form-size" action="" method="post">
+      {% csrf_token %}
+      {{ form.media }}
+      <div class="container panel-creates-task-title">
+        <p><b>Adicionar Tarefa</b></p>
+
+        <div>
+          Description: {{ form.description|add_class:"unit-task" }}
+        </div>
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-8 date">
+            Date: {{ form.start_date|add_class:"unit-task" }}
+          </div>
+        </div>
+
+        </fieldset>
+        <div class="col-md-12 text-right">
+          <button type="submit" class="btn btn-primary btn-green">Submit</button>
+        </div>
+      </div>
+    </form>
+    {% if form.errors %}
+      <br>
+      <div class="alert alert-danger" role="alert">
+        <strong>Oh no!</strong> {{form.errors}}
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}

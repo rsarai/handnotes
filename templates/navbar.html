@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block navbar %}
+  <div class="navbar">
+    <div class="handNotes">
+      <a href="{% url 'task-list' %}" class="navbar-link"><i class="fa fa-sticky-note-o"> HandNotes</i></a>
+    </div>
+    <div class="handNotes">
+      <i class="fa fa-bars fa-1x"></i>
+    </div>
+  </div>
+  {% block body %}{% endblock %}
+{% endblock %}
