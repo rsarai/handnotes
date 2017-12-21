@@ -41,7 +41,7 @@ class NoteCreateView(generic.CreateView):
     form_class = NoteForm
 
     def get_success_url(self):
-        return reverse_lazy('task-list')
+        return reverse_lazy('note-list')
 
 
 class NoteListView(generic.ListView):
@@ -57,14 +57,14 @@ class NoteUpdateView(generic.UpdateView):
     model = Task
 
     def get_success_url(self):
-        return reverse_lazy('task-list')
+        return reverse_lazy('note-list')
 
 
 class NoteDeleteView(generic.DeleteView):
     model = Note
 
     def get_success_url(self):
-        return reverse_lazy('task-list')
+        return reverse_lazy('note-list')
 
 
 class NoteDetailView(generic.DetailView):
