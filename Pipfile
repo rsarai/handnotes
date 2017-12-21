@@ -46,6 +46,7 @@ pillow = "*"
 opencv-python = "*"
 pytesseract = "*"
 ipdb = "*"
+tesseract = "*"
 
 
 [requires]
