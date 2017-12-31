@@ -1,8 +1,8 @@
 from django.conf import settings
 from django.conf.urls import include, url  # noqa
 from django.contrib import admin
-# from django.views.generic import TemplateView
-from tasks import views
+from django.views.generic import TemplateView
+# from tasks import views
 
 import django_js_reverse.views
 
@@ -11,8 +11,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^jsreverse/$', django_js_reverse.views.urls_js, name='js_reverse'),
     url(r'^tasks/', include('tasks.urls')),
-    url(r'^$', views.TaskListView.as_view(), name='task-list'),
-    # url(r'^$', TemplateView.as_view(template_name='exampleapp/itworks.html'), name='home'),
+    url(r'^$', TemplateView.as_view(template_name='exampleapp/itworks.html'), name='home'),
 ]
 
 if settings.DEBUG:

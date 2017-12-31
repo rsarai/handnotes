@@ -1,0 +1,36 @@
+.tab-item-spec {
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: #fff;
+}
+
+.items {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    page-break-inside: avoid;
+    font-size: 14px;
+  }
+}
+
+.task-content-item {
+  margin-left: 0.5rem;
+}
+
+.checker {
+  padding-right: 1rem;
+}
+
+.fill-item {
+  width: 100%;
+}
+
+.table-icons-width {
+  width: 5%;
+}
+
+.table-date {
+  text-align: right;
+  padding-right: 2rem;
+}

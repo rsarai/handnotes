@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Navbar from '../app/example-app';
+import HomeContainer from '../app/example-app';
 
-ReactDOM.render(<Navbar />, document.getElementById('react-app'));
+
+ReactDOM.render(
+  <HomeContainer />,
+  document.getElementById('react-app'));
