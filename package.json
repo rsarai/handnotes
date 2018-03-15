@@ -66,6 +66,7 @@
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
     "react-modal": "^3.1.10",
+    "react-modal-dialog": "^4.0.7",
     "redux": "^3.7.2",
     "resolve-url-loader": "^2.2.1",
     "sass-loader": "^6.0.6",

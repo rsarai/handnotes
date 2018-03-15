@@ -7,7 +7,7 @@ import './style.scss';
 
 function AgendaWrapper() {
   return (<div className="tab-item-spec col-10">
-    <h3 className="view-header">Tarefas</h3>
+    <h3 className="view-header">Tasks</h3>
     <div className="section-tasks">
       <ul className="items section-separator">
         <li className="unit-task task-item">

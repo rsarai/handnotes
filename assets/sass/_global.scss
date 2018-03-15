@@ -133,3 +133,19 @@
 .lateral-menu {
   color: black;
 }
+
+.task-create-modal {
+  position: relative;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  height: 200px;
+  width: 800px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+}
